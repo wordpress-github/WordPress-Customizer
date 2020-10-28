@@ -8,7 +8,7 @@ $wp_customize->add_setting('themeslug_color_id', array(
       $wp_customize, 
       'themeslug_color_id', 
       array(
-          'label'      => esc_html__('Background Color', 'themeslug'),
+          'label'      => esc_html__('Text Color', 'themeslug'),
           'section'    => 'themeslug_section_id',
               'setting'   => 'themeslug_color_id',
   
