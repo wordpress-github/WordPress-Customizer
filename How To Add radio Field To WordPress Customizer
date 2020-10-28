@@ -1,0 +1,16 @@
+$wp_customize->add_setting('themeslug_radio_id', array(
+    'default'        => '',      
+    ));
+    $wp_customize->add_control('themeslug_radio_id', array(
+    'label'      => esc_html__('Input Type radio:', 'themeslug'),
+    'type' => 'radio',
+    'choices' => array(
+        'one' => __( 'One' ),
+        'two' => __( 'Two' ),
+        'three' => __( 'Three' ),
+      ),
+    'priority' => 4,
+    'section'    => 'themeslug_section_id',
+    'setting'   => 'themeslug_radio_id',
+    'capability' => 'edit_theme_options',
+    ));	
