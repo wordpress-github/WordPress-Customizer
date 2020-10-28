@@ -16,5 +16,5 @@ $wp_customize->add_setting('themeslug_color_id', array(
       
       
       Usage
-      <h1 style="background-color:<?php esc_html_e( get_theme_mod( 'themeslug_color_id' ))?>"> Hello World </h1>
+      <h1 style="color:<?php esc_html_e( get_theme_mod( 'themeslug_color_id' ))?>"> Hello World </h1>
       
