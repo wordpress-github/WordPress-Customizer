@@ -15,4 +15,4 @@ $wp_customize->add_control('themeslug_text_id', array(
 
 
 Usage
-<?php esc_html_e( get_theme_mod( 'InputType_text_id' ) ); ?>
+<?php esc_html_e( get_theme_mod( 'themeslug_text_id' ) ); ?>
