@@ -1,13 +1,18 @@
+/* Create setting for text field */
 $wp_customize->add_setting('themeslug_text_id', array(
-        'default'        => '',
-		'sanitize_callback' => 'sanitize_text_field'       
-    ));
-    
-    $wp_customize->add_control('themeslug_text_id', array(
-        'label'    => esc_html__('Input Type: Text', 'themeslug'),
-        'type' => 'text',
-        'priority' => 1,
-        'section'   => 'themeslug_section_id',
-        'setting'  => 'themeslug_type',
-        'capability' => 'edit_theme_options',
-    ));	
+    'default'        => '',
+    'sanitize_callback' => 'sanitize_text_field'       
+));
+/* Create control for text field */
+$wp_customize->add_control('themeslug_text_id', array(
+ 'label'    => esc_html__('Input Type: Text', 'themeslug'),
+ 'type' => 'text',
+ 'priority' => 1,
+ 'section'   => 'themeslug_section_id',
+ 'setting'  => 'themeslug_type',
+ 'capability' => 'edit_theme_options',
+ ));	
+
+
+Usage
+<?php esc_html_e( get_theme_mod( 'InputType_text' ) ); ?>
