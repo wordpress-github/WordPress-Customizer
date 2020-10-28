@@ -14,3 +14,6 @@ $wp_customize->add_setting('themeslug_radio_id', array(
     'setting'   => 'themeslug_radio_id',
     'capability' => 'edit_theme_options',
     ));	
+
+Usage
+<?php esc_html_e( get_theme_mod( 'themeslug_radio_id' ) ); ?>
