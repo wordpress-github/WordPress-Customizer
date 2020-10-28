@@ -1,0 +1,20 @@
+$wp_customize->add_setting('themeslug_color_id', array(
+      'default'        => '#39C',
+      'transport'   => 'refresh',
+      'sanitize_callback' => 'sanitize_hex_color',
+  ));
+  $wp_customize->add_control( 
+      new WP_Customize_Color_Control( 
+      $wp_customize, 
+      'themeslug_color_id', 
+      array(
+          'label'      => esc_html__('Background Color', 'themeslug'),
+          'section'    => 'themeslug_section_id',
+              'setting'   => 'themeslug_color_id',
+  
+      ) ) );
+      
+      
+      Usage
+      <h1 style="background-color:<?php esc_html_e( get_theme_mod( 'themeslug_color_id' ))?>"> Hello World </h1>
+      
