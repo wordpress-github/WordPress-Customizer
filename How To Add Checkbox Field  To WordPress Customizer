@@ -1,0 +1,14 @@
+$wp_customize->add_setting('themeslug_checkbox_id', array(
+    'default'        => 'Select Checkbox',
+    ));
+    $wp_customize->add_control('themeslug_checkbox_id', array(
+    'label'      => esc_html__('Input Type checkbox', 'themeslug'),
+    'type' => 'checkbox',
+    'priority' => 3,
+    'section'    => 'themeslug_section_id',
+    'setting'   => 'themeslug_checkbox_id',
+    'capability' => 'edit_theme_options',
+    ));	
+    
+    Usage 
+    <?php esc_html_e( get_theme_mod( 'themeslug_checkbox_id' ) ); ?>
