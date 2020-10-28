@@ -15,4 +15,4 @@
     
     
     Usage 
-    <?php esc_html_e( get_theme_mod( 'InputType_textarea_id' ) ); ?>
+    <?php esc_html_e( get_theme_mod( 'themeslug_textarea_id' ) ); ?>
