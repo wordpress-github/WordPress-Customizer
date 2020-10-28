@@ -1,0 +1,22 @@
+$wp_customize->add_setting('themeslug_select_id', array(
+    'default'        => '',
+           
+    ));
+    $wp_customize->add_control('themeslug_select_id', array(
+    'label'      => esc_html__('Input Type select:', 'themeslug'),
+    'type' => 'select',
+    'choices' => array(
+        'default' => __('Default'),
+        'one' => __( 'One' ),
+        'two' => __( 'Two' ),
+        'three' => __( 'Three' ),
+    ),
+    'priority' => 5,
+    'section'    => 'themeslug_section_id',
+    'setting'   => 'themeslug_select_id',
+    'capability' => 'edit_theme_options'
+    ));	
+    
+    
+    Usage 
+    	<?php esc_html_e( get_theme_mod( 'themeslug_select_id' ) ); ?>
